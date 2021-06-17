@@ -36,7 +36,7 @@
 }
 .header .nav a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   color: #222222;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -52,4 +52,7 @@
 }
 .header li {
   display: inline;
+}
+.menuTitle {
+  margin-left: 6px;
 }
