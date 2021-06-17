@@ -2,7 +2,7 @@ import React from "react";
 // import { Card, EmptyState, Layout, Page } from '@shopify/polaris';
 // import { ResourcePicker, TitleBar } from "@shopify/app-bridge-react";
 import { Card, Container, Typography, Grid, Button } from "@material-ui/core";
-import { Form, Col, Table, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Form, Col, Table } from "react-bootstrap";
 import {
   Radio,
   RadioGroup,
@@ -10,41 +10,15 @@ import {
   FormControl,
   FormLabel,
 } from "@material-ui/core";
-
-const img = "https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 class Index extends React.Component {
-  state = { open: false };
   render() {
     return (
       <React.Fragment>
-        {/* <Navbar collapseOnSelect expand="lg">
-          <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-          </Container>
-        </Navbar> */}
-
-        <Container>
+        <Header />
+        <Container style={{ marginTop: 140 }}>
           <Grid container direction="column" spacing={3}>
             <Grid item lg={12}>
               <Card style={{ padding: 20, boxShadow: "none" }}>
@@ -1042,6 +1016,7 @@ class Index extends React.Component {
             {/* END: Save And Cancel */}
           </Grid>
         </Container>
+        <Footer />
       </React.Fragment>
 
       // <Page>
