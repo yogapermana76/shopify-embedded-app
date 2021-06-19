@@ -130,32 +130,34 @@ class Index extends React.Component {
             {/* END: Free Shipping Bar */}
 
             {/* START: Basic Template*/}
-            {/* <Grid item>
-              <Card style={{ padding: 20, boxShadow: "none" }}>
-                <Typography
-                  style={{
-                    fontWeight: 600,
-                    fontSize: 18,
-                    marginBottom: 32,
-                  }}
-                >
-                  Preview
-                </Typography>
-              </Card>
+            <Grid item container direction="row" spacing={3}>
+              <Grid lg={6} item>
+                <Card style={{ padding: 20, boxShadow: "none" }}>
+                  <Typography
+                    style={{
+                      fontWeight: 600,
+                      fontSize: 18,
+                      marginBottom: 32,
+                    }}
+                  >
+                    Preview
+                  </Typography>
+                </Card>
+              </Grid>
+              <Grid lg={6} item>
+                <Card style={{ padding: 20, boxShadow: "none" }}>
+                  <Typography
+                    style={{
+                      fontWeight: 600,
+                      fontSize: 18,
+                      marginBottom: 32,
+                    }}
+                  >
+                    Basic Template
+                  </Typography>
+                </Card>
+              </Grid>
             </Grid>
-            <Grid item>
-              <Card style={{ padding: 20, boxShadow: "none" }}>
-                <Typography
-                  style={{
-                    fontWeight: 600,
-                    fontSize: 18,
-                    marginBottom: 32,
-                  }}
-                >
-                  Basic Template
-                </Typography>
-              </Card>
-            </Grid> */}
             {/* END: Basic Template */}
 
             {/* START: Preview */}
